@@ -70,7 +70,13 @@ const withAuthUserTokenSSR =
         ? JSON.parse(cookieValStr)
         : {}
       if (idToken) {
-        AuthUser = await verifyIdToken(idToken, refreshToken)
+        try {
+          AuthUser = await verifyIdToken(idToken, refreshToken)
+        } catch (error) {
+          // The Key ID of the Firebase token won't correspond to a known
+          // public key, which means the token has most likely expired.
+          AuthUser = createAuthUser() // unauthenticated AuthUser
+        }
       } else {
         AuthUser = createAuthUser() // unauthenticated AuthUser
       }
