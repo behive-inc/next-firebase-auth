@@ -1,5 +1,5 @@
 {
-  "name": "next-firebase-auth",
+  "name": "@behive-inc/next-firebase-auth",
   "version": "0.13.4-alpha.0",
   "description": "Simple Firebase authentication for all Next.js rendering strategies",
   "keywords": [
