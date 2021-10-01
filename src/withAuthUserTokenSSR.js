@@ -76,6 +76,9 @@ const withAuthUserTokenSSR =
           // The Key ID of the Firebase token won't correspond to a known
           // public key, which means the token has most likely expired.
           AuthUser = createAuthUser() // unauthenticated AuthUser
+
+          // eslint-disable-next-line no-console
+          console.error('Error when executing verifyIdToken', error, AuthUser)
         }
       } else {
         AuthUser = createAuthUser() // unauthenticated AuthUser

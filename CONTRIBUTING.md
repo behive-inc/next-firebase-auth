@@ -27,13 +27,13 @@ If you find a security vulnerability, do **not** open an issue. Please email the
 1. Before coding, please open a related issue (or comment on an existing issue to let us know you're working on it)
 2. Fork this repository
 3. Make code changes in your fork
-    * Add comments where it's potentially unclear what your code is doing
-    * Commit with descriptive messages
-    * Ensure complete code coverage for your changes
-    * Make sure all linting and tests succeed (`yarn run test`)
+   - Add comments where it's potentially unclear what your code is doing
+   - Commit with descriptive messages
+   - Ensure complete code coverage for your changes
+   - Make sure all linting and tests succeed (`yarn run test`)
 4. Open a pull request pointing to the `main` branch in this repository
-    * Add a clear title
-    * In the description, link to the related issue, such as: `Closes #123.`
+   - Add a clear title
+   - In the description, link to the related issue, such as: `Closes #123.`
 
 ### Developing with a local version of the package
 

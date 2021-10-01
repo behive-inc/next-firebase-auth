@@ -4,7 +4,6 @@ about: Suggest new or updated documentation
 title: ''
 labels: documentation
 assignees: ''
-
 ---
 
 **Did you have difficulty using or understanding an aspect of `next-firebase-auth`?**
